@@ -1,0 +1,76 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+  <div formGroupName="aerodynamics">
+    <label for="frontWing">Front Wing</label>
+    <input id="frontWing" formControlName="frontWing">
+
+    <label for="rearWing">Rear Wing</label>
+    <input id="rearWing" formControlName="rearWing">
+  </div>
+
+  <div formGroupName="transmission">
+    <label for="onThrottle">Differential Adjustment On Throttle</label>
+    <input id="onThrottle" formControlName="onThrottle">
+
+    <label for="offThrottle">Differential Adjustment Off Throttle</label>
+    <input id="offThrottle" formControlName="offThrottle">
+  </div>
+
+  <div formGroupName="suspensionGeometry">
+    <label for="frontCamber">Front Camber</label>
+    <input id="frontCamber" formControlName="frontCamber">
+
+    <label for="rearCamber">Rear Camber</label>
+    <input id="rearCamber" formControlName="rearCamber">
+
+    <label for="frontToe">Front Toe</label>
+    <input id="frontToe" formControlName="frontToe">
+
+    <label for="rearToe">Rear Toe</label>
+    <input id="rearToe" formControlName="rearToe">
+  </div>
+
+  <div formGroupName="suspension">
+    <label for="frontSuspension">Front Suspension</label>
+    <input id="frontSuspension" formControlName="frontSuspension">
+
+    <label for="rearSuspension">Rear Suspension</label>
+    <input id="rearSuspension" formControlName="rearSuspension">
+
+    <label for="frontAntiRollbar">Front Rollbar</label>
+    <input id="frontAntiRollbar" formControlName="frontAntiRollbar">
+
+    <label for="rearAntiRollbar">Rear Rollbar</label>
+    <input id="rearAntiRollbar" formControlName="rearAntiRollbar">
+
+    <label for="frontRideHeight">Front Ride Height</label>
+    <input id="frontRideHeight" formControlName="frontRideHeight">
+
+    <label for="rearRideHeight">Rear Ride Height</label>
+    <input id="rearRideHeight" formControlName="rearRideHeight">
+  </div>
+
+  <div formGroupName="brakes">
+    <label for="brakePressure">Brake Pressure</label>
+    <input id="brakePressure" formControlName="brakePressure">
+
+    <label for="frontBrakeBias">Front Brake Bias</label>
+    <input id="frontBrakeBias" formControlName="frontBrakeBias">
+  </div>
+
+  <div formGroupName="tyres">
+    <label for="frontRightTyrePressure">Front Right Tyre Pressure</label>
+    <input id="frontRightTyrePressure" formControlName="frontRightTyrePressure">
+
+    <label for="frontLeftTyrePressure">Front Left Tyre Pressure</label>
+    <input id="frontLeftTyrePressure" formControlName="frontLeftTyrePressure">
+
+    <label for="rearRightTyrePressure">Rear Right Tyre Pressure</label>
+    <input id="rearRightTyrePressure" formControlName="rearRightTyrePressure">
+
+    <label for="rearLeftTyrePressure">Rear Left Tyre Pressure</label>
+    <input id="rearLeftTyrePressure" formControlName="rearLeftTyrePressure">
+  </div>
+
+  <button id="submit-button" type="submit">Submit</button>
+</form>

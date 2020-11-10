@@ -2,8 +2,11 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  template: `
+    <ng-container>
+      <router-outlet></router-outlet>
+    </ng-container>
+  `,
 })
 export class AppComponent implements OnInit {
   title = 'f1-setup';
