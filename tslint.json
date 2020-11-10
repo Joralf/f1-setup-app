@@ -1,5 +1,4 @@
 {
-  "extends": "tslint:recommended",
   "rules": {
     "align": {
       "options": [
@@ -144,9 +143,13 @@
     "template-banana-in-box": true,
     "template-no-negated-async": true,
     "use-lifecycle-interface": true,
-    "use-pipe-transform-interface": true
+    "use-pipe-transform-interface": true,
+    "prettier": true,
+    "ordered-imports": true
   },
-  "rulesDirectory": [
-    "codelyzer"
+  "rulesDirectory": ["tslint-plugin-prettier"],
+  "extends": [
+    "tslint:latest",
+    "tslint-config-prettier"
   ]
 }
